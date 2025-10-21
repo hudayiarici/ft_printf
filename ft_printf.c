@@ -6,7 +6,7 @@
 /*   By: harici <harici@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:37:28 by harici            #+#    #+#             */
-/*   Updated: 2025/10/21 20:03:40 by harici           ###   ########.fr       */
+/*   Updated: 2025/10/21 20:28:38 by harici           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ static int	handle_specifier(const char *format, int i, va_list arg, int len)
 
 static int	is_valid_specifier(char c)
 {
-	return (c == 'c' || c == 's' || c == 'd' || c == 'i'
-		|| c == 'u' || c == 'x' || c == 'X' || c == 'p' || c == '%');
+	return (c == 'c' || c == 's' || c == 'd' || c == 'i' || c == 'u' || c == 'x'
+		|| c == 'X' || c == 'p' || c == '%' || c == 'e');
 }
 
 static int	process_format(const char *format, va_list arg)

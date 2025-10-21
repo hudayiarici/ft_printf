@@ -6,7 +6,7 @@
 /*   By: harici <harici@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:37:40 by harici            #+#    #+#             */
-/*   Updated: 2025/09/24 16:45:45 by harici           ###   ########.fr       */
+/*   Updated: 2025/10/21 20:00:10 by harici           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,7 @@ int		ft_putunbr_fpf(unsigned int n, int len);
 int		ft_puthexa_fpf(unsigned int n, char *base, int len);
 int		ft_putptr_fpf(void *ptr, int len);
 int		ft_printf(const char *format, ...);
+int		ft_putchar_error(char c, int len);
+int		ft_putstr_error(char *s, int len);
 
 #endif

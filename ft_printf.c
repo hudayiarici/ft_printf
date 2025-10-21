@@ -6,7 +6,7 @@
 /*   By: harici <harici@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:37:28 by harici            #+#    #+#             */
-/*   Updated: 2025/10/21 19:57:05 by harici           ###   ########.fr       */
+/*   Updated: 2025/10/21 20:03:40 by harici           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	handle_specifier(const char *format, int i, va_list arg, int len)
 	else if (format[i + 1] == '%')
 		len = ft_putchar_fpf('%', len);
 	else if (format[i + 1] == 'e')
-		len = ft_putstr_error(va_arg(arg, int), len);
+		len = ft_putstr_error(va_arg(arg, char *), len);
 	return (len);
 }
 
